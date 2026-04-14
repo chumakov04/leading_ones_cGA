@@ -39,7 +39,8 @@ class CGA:
                 else:
                     self.p[i] -= 1 / self.n
                 # restrict p to [1/n, 1-1/n] so no bit is ever fully fixed
-                # allows recovery from wrong decisions (Chwiałkowski et al., 2025)
+                # allows recovery from wrong decisions 
+                # https://www.researchgate.net/publication/388422574_Runtime_Analysis_of_the_Compact_Genetic_Algorithm_on_the_LeadingOnes_Benchmark
                 self.p[i] = max(1/self.vec_length, min(1 - 1/self.vec_length, self.p[i]))
 
     def has_converged(self) -> bool:
