@@ -1,8 +1,3 @@
-#%% md
-## <a name="references"></a> References
-
-<a name="rn"></a> [RN21] S. Russell and P. Norvig, Artificial Intelligence, Global Edition A Modern Approach. Pearson, 2021.
-#%%
 import numpy as np
 
 class CGA:
